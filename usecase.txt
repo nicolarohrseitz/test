@@ -1,0 +1,15 @@
+sequenceDiagram
+	 participant Anna
+	 participant SparkBot
+	 Anne->>SparkBot: Hey Spark, let's start
+	 loop NLU Processing
+		 SparkBot->>SparkBot: Process input
+	 end
+	 Note right of SparkBot: Find and start meeting
+	 SparkBot-->>Anne: Connecting to Michael
+	 loop Networking
+		 SparkBot->>SparkBot: Connecting meeting
+	 end
+	 Michael-->>Anne: Hello? 
+	 Anne->>Michael: Hey Mike, it's Anne! How are you?
+	 Michael-->>Anne: Great, let's do this!
